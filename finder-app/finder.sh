@@ -12,6 +12,7 @@ if [ ! -d "$filedir" ]; then
     echo "Error: $filesdir is not a directory"
     exit 1
 fi
+#2
 
 file_count=$(find "$filedir" -type f| wc -l)
 matching_lines=$(grep -r "$searchstr" "$filedir" | wc -l)
